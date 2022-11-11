@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Text-date-image</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Sending: text image date</div>
+        <hr />
+        <form action="/getData" method="POST" enctype="multipart/form-data">
+            <fieldset style="width: 350px">
+                
+                <justify>
+                    <h1>ID Card</h1>
+                </justify>
+                <p>
+                    <label>Name : </label>
+                    <input type="text" name="nama">
+                </p>
+                <br>
+                <p>
+                    <label>Born : </label>
+                    <input type="date" name="tanggal">
+                </p>
+                <br>
+                <p>
+                    <label>Photo : </label>
+                    <input type="file" name="image" accept="image/*">
+                </p>
+                <br>
+                
+                <input type="submit" value="Send" style="float: right"><br>
+            </fieldset>
+        </form>
+    </body>
+</html>
